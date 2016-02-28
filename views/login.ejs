@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+<% include templates/header.ejs %>
+<% if(user) { %>
+User : <%= user.username %>
+<% } %>
+
+<h1><%= title %></h1>
+
+<div id="container">
+    <form id="login" action="/login" method="post" style="max-width: 25%">
+        Username: <br>
+        <input type="text" name="username"> <br>
+        Password: <br>
+        <input type="text" name="password"> <br>
+        <input type="submit" value="Log in">
+    </form>
+</div>
+
+<a href="/register">Register</a>
+
+<% include templates/footer.ejs %>
+</body>
+
+</html>
+
+

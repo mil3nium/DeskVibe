@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Search</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.css">
+    <script src="//cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.js"></script>
+</head>
+
+<body>
+    <% include templates/header.ejs %>
+
+    <input type="text" id="q" class="ais-search-box--powered-by-link" />
+    <div id="hits-container"></div>
+    <div id="pagination-container"></div>
+
+    <% include templates/footer.ejs %>
+
+<script>
+
+
+    var search = instantsearch({
+        appId: 'HGP9WVH3MW',
+        apiKey: 'e2e28fcd56d3e4d545134a2bcc38e1dd',
+        indexName: 'offices'
+    });
+
+    search.addWidget(
+            instantsearch.widgets.searchBox({
+                container: '#q',
+                placeholder: 'Search for your perfect office!',
+                autofocus: false,
+                poweredBy: true
+            })
+    );
+
+    search.addWidget(
+            instantsearch.widgets.hits({
+                container: '#hits-container',
+                templates: {
+                    empty: 'No Results',
+                    item: '<strong>Hit {{ObjectID}}</strong>: {{{_highlightResult.company.value}}}'
+                },
+                hitsPerPage: 10
+            })
+    );
+
+    search.addWidget(
+            instantsearch.widgets.pagination({
+                container: '#pagination-container'
+            })
+    );
+
+    search.start();
+</script>
+
+</body>
+
+</html>

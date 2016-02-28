@@ -1,0 +1,39 @@
+#header {
+  background-color: antiquewhite;
+}
+
+body {
+  background-color: #e9f0ff;
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.body-left {
+  width: 50%;
+  align-self: left;
+}
+
+.body-right {
+  background-color: white;
+  width: 50%;
+}
+
+.ais-search-box--powered-by-link {
+  display: inline-block;
+  width: 10%;
+  height: 20px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-size: contain;
+  vertical-align: middle
+}
+
+a {
+  color: #00B7FF;
+}
+
+#footer {
+  background-color: antiquewhite;
+}
+

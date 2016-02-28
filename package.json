@@ -1,0 +1,42 @@
+{
+  "name": "wiznez",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "ejs": "~2.3.3",
+    "express": "~4.13.1",
+    "instantsearch.js": "^1.2.3",
+    "mongodb": "^2.1.7",
+    "morgan": "~1.6.1",
+    "serve-favicon": "~2.3.0",
+    "passport_local": ""
+  },
+  "description": "Basic office search platform",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mil3nium/wiznez.git"
+  },
+  "keywords": [
+    "wiznez",
+    "express",
+    "node",
+    "algolia",
+    "mongodb",
+    "office",
+    "search"
+  ],
+  "author": "Emil Andreas Olsen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mil3nium/wiznez/issues"
+  },
+  "homepage": "https://github.com/mil3nium/wiznez#readme"
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+<% include templates/header.ejs %>
+
+<% if(error != '') {  %>
+    <div id="error" style="background-color: red"> <%= error.message %>  </div>
+<% } %>
+
+<h1>Register</h1>
+<form id="reg" action="/register" method="post" style="max-width: 25%">
+    Email: <input type="text" name="username"> <br>
+    Password: <input type="text" name="password"> <br>
+    <input type="submit" value="Register"> <br>
+</form>
+
+<% include templates/footer.ejs %>
+</body>
+
+</html>

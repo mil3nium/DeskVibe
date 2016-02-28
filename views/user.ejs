@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+<% include templates/header.ejs %>
+
+<h1><%= name %></h1>
+<p>Welcome to <%= name %></p>
+
+<form id="userData" action="/user" method="post">
+    <h2>User data:</h2> <br>
+    <% if(type === 'http') { %>
+    Username: <br> <input type="text" name="username" value="<%= username%>" /> <br>
+    <% } %>
+    Name: <br> <input type="text" name="name" value="<%= name %>" /> <br>
+    Change password: <br>
+    Old: <input type="text" name="oldPW" /> <br>
+    New: <input type="text" name="newPW" /> <br>
+    New: <input type="text" name="newPW2" /> <br>
+    <input type="submit" value="Update" />
+</form>
+
+<% include templates/footer.ejs %>
+</body>
+
+</html>

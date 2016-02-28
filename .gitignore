@@ -1,9 +1,11 @@
-# Logs
+# Logs #
+########
 logs
 *.log
 npm-debug.log*
 
-# Runtime data
+# Runtime data #
+################
 pids
 *.pid
 *.seed
@@ -31,3 +33,12 @@ node_modules
 
 # Optional REPL history
 .node_repl_history
+
+
+
+# Folders to ingore  #
+######################
+/.idea/**
+/Admin/**
+/models/config.js
+/node_modules/**

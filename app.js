@@ -62,6 +62,7 @@ app.use('/user', user)
 
 /**
  * Mongoose databasepath. Needs to be changed to a better name
+ * Removed from here and changed to different name when using functions in user and landlord
  */
 mongoose.connect('mongodb://localhost/passport_local_mongoose_express4');
 

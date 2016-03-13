@@ -17,7 +17,6 @@
  * Others required files
  */
 var passport = require('passport');
-;
 var LocalStrategy = require('passport-local').Strategy;
 var FacebookStrategy = require('passport-facebook');
 var GoogleStrategy = require('passport-google-oauth2');
@@ -127,7 +126,7 @@ passport.serializeUser(function (user, done) {
 });
 
 /**
- * Disconects the user from session when finished sending packages. Sends user cookies to recognize the user afterwards.
+ * Disconnects the user from session when finished sending packages. Sends user cookies to recognize the user afterwards.
  */
 passport.deserializeUser(function (id, done) {
     Account.findById(id, function (err, user) {

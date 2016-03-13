@@ -14,8 +14,7 @@
     "instantsearch.js": "^1.2.3",
     "mongodb": "^2.1.7",
     "morgan": "~1.6.1",
-    "serve-favicon": "~2.3.0",
-    "passport_local": ""
+    "serve-favicon": "~2.3.0"
   },
   "description": "Basic office search platform",
   "main": "app.js",
